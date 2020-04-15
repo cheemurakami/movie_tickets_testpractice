@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Tickets</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+  <h1>Welcom to Javascript Cinemas</h1>
+  <h4>Please select your age,movie you'd like to see and a showtime.</h4>
+</br>
+  <div class="container">
+    <form id="form-container">
+      <div class="form-group">
+        <label for="age">Age</label>
+        <select id="age">
+          <option value="child">Child: under 17</option>
+          <option value="adult">Adult: 18 to 64</option>
+          <option value="senior">Senior: 65 and over</option>
+        </select>
+        <label for="movie">Movie</label>
+        <select  id="movie-title">
+          <option value="horror">The end of time</option>
+          <option value="family">The little dinosaur</option>
+          <option value="action">Ground Zero</option>
+        </select>
+        <label for="showTime">Showtime</label>
+        <select id="show-time">
+          <option value="matinee">1500</option>
+          <option value="afternoon">1830</option>
+          <option value="night">2130</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="output"> 
+      <p>You are seeing <span class="movie"></span></p>
+      <P>at this time <span class="time"></span></P>
+    <p>and your ticket price is <span class="ticket-price"> </span>enjoy the show!</p>
+    </div>
+  </div>
+</body>
+</html>
